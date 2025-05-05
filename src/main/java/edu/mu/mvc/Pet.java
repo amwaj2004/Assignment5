@@ -1,10 +1,12 @@
 package edu.mu.mvc;
 
-public class Pet {
-
-	public static void Main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+public interface Pet {
+	
+	String getName();
+	String getType();
+	String getSpecies();
+	String getID(); //depending on source : exotic animals are a string
+	int getAge();
+	boolean isAdopted();
+	
 }
