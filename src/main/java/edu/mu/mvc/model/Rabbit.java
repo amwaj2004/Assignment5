@@ -12,6 +12,15 @@ public class Rabbit implements Pet{
 	private int age;
 	private boolean adopted;
 	
+	/**
+	 * param constructor that initializes all the fields
+	 * 
+	 * @param name
+	 * @param type
+	 * @param species
+	 * @param id
+	 * @param age
+	 */
 	public Rabbit(String name, String type, String species, String id, int age) {
 		super();
 		this.name = name;
@@ -27,6 +36,9 @@ public class Rabbit implements Pet{
 		this.adopted = false;
 	}
 
+	/**
+	 * Getters and setters 
+	 */
 	@Override
 	public String getName() {
 		return name;
@@ -69,6 +81,9 @@ public class Rabbit implements Pet{
 		}
 	}
 
+	/**
+	 * Checks is two dog instances are equal 
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

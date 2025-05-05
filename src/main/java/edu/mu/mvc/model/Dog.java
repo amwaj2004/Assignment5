@@ -4,6 +4,7 @@ import edu.mu.mvc.Pet;
 
 public class Dog implements Pet{
 
+	
 	private String name;
 	private String type;
 	private String species;
@@ -11,6 +12,15 @@ public class Dog implements Pet{
 	private int age;
 	private boolean adopted;
 	
+	/**
+	 * param constructor that initializes all the fields
+	 * 
+	 * @param name
+	 * @param type
+	 * @param species
+	 * @param id
+	 * @param age
+	 */
 	public Dog(String name, String type, String species, String id, int age) {
 		super();
 		this.name = name;
@@ -26,6 +36,9 @@ public class Dog implements Pet{
 		this.adopted = false;
 	}
 
+	/**
+	 * Getters and setters for the fields
+	 */
 	@Override
 	public String getName() {
 		return name;
@@ -78,7 +91,10 @@ public class Dog implements Pet{
 	public int hashCode() {
 		return Objects.hash(adopted, age, id, name, species, type);
 	}
-
+	
+	/**
+	 * Checks is two dog instances are equal 
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
