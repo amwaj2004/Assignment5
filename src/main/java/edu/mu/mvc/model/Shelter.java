@@ -8,8 +8,6 @@ import edu.mu.mvc.Pet;
  */
 
 public class Shelter<T extends Pet> {
-//	private final String name;
-//	private final String address;
 	// internal storage, has each pet by specific id 
 	private final Map<String, T> pets = new HashMap<>();
 	
@@ -97,6 +95,12 @@ public class Shelter<T extends Pet> {
 		return new ArrayList<>(pets.values());
 	}
 	
+	/**
+	 * This method checks is the given id is able to be found
+	 * if it is available then it marks that pet as adopted
+	 * 
+	 * @param id	of desired pet
+	 */
 	public void adoptPet(String id) {
 		if(id == null || id.isEmpty()) {
 			throw new IllegalArgumentException("Pet ID cannot be found or is null");
