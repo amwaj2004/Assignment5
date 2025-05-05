@@ -1,5 +1,8 @@
 package edu.mu.mvc.adapter;
 
+/**
+ * A third-party ExoticAnimal class
+ */
 public class ExoticAnimal {
 	String id;
 	String name;

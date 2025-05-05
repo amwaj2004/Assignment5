@@ -2,6 +2,9 @@ package edu.mu.mvc.adapter;
 
 import edu.mu.mvc.Pet;
 
+/**
+ * An adaptor that allows a third-party to be treated as one of ours 
+ */
 public class ExoticPetAdapter implements Pet{
 	ExoticAnimal exotic;
 	boolean adoptStatus = false;
